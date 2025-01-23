@@ -1,1 +1,1 @@
-example
+This repo contains Hubspot projects

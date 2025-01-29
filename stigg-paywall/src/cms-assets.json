@@ -1,0 +1,5 @@
+{
+	"label": "Stigg Paywall - React",
+	"outputPath": "",
+	"secretNames": ["STIGG_API_KEY"]
+}

@@ -1,0 +1,25 @@
+{
+	"private": true,
+	"name": "stigg",
+	"version": "1.0.0",
+	"description": "Stigg paywall module",
+	"type": "module",
+	"scripts": {
+		"start": "hs-cms-dev-server .",
+		"deploy": "hs project upload stigg-paywall",
+		"test": "vitest"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@hubspot/cms-components": "^0.14",
+		"@stigg/react-sdk": "^5.28.2",
+		"react": "^18.2.0"
+	},
+	"devDependencies": {
+		"@hubspot/cms-dev-server": "^0.14"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
+}

@@ -9,6 +9,7 @@ Recommended reading:
 -   https://developers.hubspot.com/docs/guides/cms/content/themes/build-and-deploy-with-projects
 -   https://developers.hubspot.com/docs/guides/cms/content/templates/overview
 -   https://github.hubspot.com/cms-react/
+-   https://developers.hubspot.com/docs/reference/cms/hubl/overview
 
 First: Install the HubSpot CLI globally. Use this guide https://developers.hubspot.com/docs/guides/cms/setup/getting-started-with-local-development. You will then need to the authorize the project.
 

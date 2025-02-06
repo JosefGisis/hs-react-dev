@@ -1,0 +1,75 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Home (customized)
+-->
+{% from '../generated-content.html' import generated_content %}
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+{% dnd_area "dnd_area"
+  label="Main section"
+%}
+
+  {% include_dnd_partial
+    path="../sections/hero-banner.html"
+    context={
+      "heading": generated_content.page_content.hero_banner.heading,
+      "content": generated_content.page_content.hero_banner.content,
+      "button": generated_content.page_content.hero_banner.button,
+      "background_image": generated_content.page_content.hero_banner.image,
+    }
+  %}
+
+  {% include_dnd_partial
+    path="../sections/logo-gallery.html"
+    context={
+      "background_color": generated_content.colors.accent_background,
+    }
+  %}
+
+  {% include_dnd_partial
+    path="../sections/gallery.html"
+    context={
+      "anchor_id": "gallery",
+      "heading": generated_content.page_content.gallery.heading,
+      "content": generated_content.page_content.gallery.content,
+      "images": generated_content.page_content.gallery.items,
+    }
+  %}
+
+  {% include_dnd_partial
+    path="../sections/testimonial-quote.html"
+    context={
+      "background_color": generated_content.colors.accent_background,
+      "testimonial": generated_content.page_content.testimonials.items[0],
+      "heading": generated_content.page_content.testimonials.heading,
+      "content": generated_content.page_content.testimonials.content,
+    }
+  %}
+
+  {% include_dnd_partial
+    path="../sections/about.html"
+    context={
+      "anchor_id": "about",
+      "heading": generated_content.page_content.about.heading,
+      "content": generated_content.page_content.about.content,
+      "sub_heading": generated_content.page_content.about.sub_heading,
+      "sub_content": generated_content.page_content.about.sub_content,
+      "image": generated_content.page_content.about.image,
+    }
+  %}
+
+  {% include_dnd_partial
+    path="../sections/contact-full.html"
+    context={
+      "background_color": generated_content.colors.accent_background,
+      "anchor_id": "contact",
+      "heading": generated_content.page_content.contact.heading,
+      "content": generated_content.page_content.contact.content,
+      "form": generated_content.page_content.contact.form,
+    }
+  %}
+
+{% end_dnd_area %}
+{% endblock body %}

@@ -1,0 +1,19 @@
+{
+  "name": "hs-dev",
+  "version": "1.0.0",
+  "description": "This repo is is a demonstration of a local development project for the HubSpot CMS. It contains examples for both a theme folder that contains templates, layouts, css, js, assets, etc. (this was fetched from the design manager for my AI generated HS website) and some projects that contains CMS React.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosefGisis/hs-react-dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosefGisis/hs-react-dev/issues"
+  },
+  "homepage": "https://github.com/JosefGisis/hs-react-dev#readme"
+}
